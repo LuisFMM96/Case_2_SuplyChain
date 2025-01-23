@@ -1,0 +1,11 @@
+SELECT
+  location,
+  SUM(revenue_generated) AS ingresos_totales
+FROM
+  `supplychain1.supply_chain_analysis.supply_chain_data`
+GROUP BY
+  location
+ORDER BY
+  ingresos_totales DESC
+LIMIT
+  10;

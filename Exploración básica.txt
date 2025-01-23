@@ -1,0 +1,6 @@
+SELECT
+  COUNT(*) AS total_registros,
+  COUNT(DISTINCT product_type) AS tipos_de_productos,
+  COUNT(DISTINCT supplier_name) AS cantidad_proveedores
+FROM
+  `supplychain1.supply_chain_analysis.supply_chain_data`;
